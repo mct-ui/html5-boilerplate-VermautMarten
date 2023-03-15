@@ -119,8 +119,8 @@ $ms9: calc($ms8 * $ratio); // 52px
 $ms10: calc($ms9 * $ratio); // 58px
 $ms11: calc($ms10 * $ratio); // 66px
 
-$font-family-primary: "Helvetica Neue", Helvetica, arial, sans-serif;
-$font-family-secondary: "Times New Roman", Times, serif;
+$font-family-primary: 'Helvetica Neue', Helvetica, arial, sans-serif;
+$font-family-secondary: 'Times New Roman', Times, serif;
 
 // ---
 // Settings: Spacing
@@ -167,12 +167,11 @@ $breakpoints: (
   margin: 0;
   font-size: 100%;
   font-weight: normal;
-
 }
 
 img {
-  display: block;// make images block level elements
-  max-width: 100%;// make images responsive
+  display: block; // make images block level elements
+  max-width: 100%; // make images responsive
 }
 
 /*---------------------------------------/*
@@ -186,10 +185,10 @@ img {
 */
 
 html {
-  font-size: calc($root-font-size /16 * 100%); 
+  font-size: calc($root-font-size / 16 * 100%);
   line-height: 1.5;
   font-family: $font-family-primary;
-  color:$color-text;
+  color: $color-text;
   scroll-behavior: smooth;
 }
 
@@ -214,21 +213,21 @@ h1 {
   line-height: calc($baseline * 4);
   margin-bottom: $space-m;
 
-    @include mq(bp1) {
-      font-size: $ms9;
-      line-height: calc($baseline * 4);
-    }
+  @include mq(bp1) {
+    font-size: $ms9;
+    line-height: calc($baseline * 4);
+  }
 
-    @include mq(bp2) {
-      font-size: $ms11;
-      line-height: calc($baseline * 8)
-    }
+  @include mq(bp2) {
+    font-size: $ms11;
+    line-height: calc($baseline * 8);
+  }
 }
 
 h2 {
   font-weight: 700;
   font-size: $ms3;
-  line-height: calc($baseline *3);
+  line-height: calc($baseline * 3);
   margin-bottom: $space-m;
 }
 
@@ -273,14 +272,13 @@ blockquote {
   font-family: $font-family-secondary;
   font-style: italic;
   font-size: $ms3;
-  line-height: calc($baseline *4);
+  line-height: calc($baseline * 4);
   margin-bottom: $space-m;
 }
 
-
 figcaption {
   font-size: $ms-1;
-  line-height: calc($baseline *2);
+  line-height: calc($baseline * 2);
   margin-top: $space-xs;
   color: $color-text-lighter;
 }
@@ -320,6 +318,8 @@ a:active {
 */
 
 .o-row {
+  padding: $space-m $space-m 0;
+  display: flow-root;
 }
 
 /*
@@ -329,6 +329,10 @@ a:active {
 */
 
 .o-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 6.25rem;
+  max-width: 50rem;
 }
 
 /*

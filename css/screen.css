@@ -167,11 +167,23 @@ a:active {
     ---
     Creates a horizontal row with padding
 */
+.o-row {
+  padding: 1.5rem 1.5rem 0;
+  display: flow-root;
+}
+
 /*
     Objects: Container
     ---
     Creates a horizontal container that sets de global max-width
 */
+.o-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 6.25rem;
+  max-width: 50rem;
+}
+
 /*
     Objects: Layout
     ---
